@@ -39,3 +39,5 @@ This project utilizes the following dependencies:
 - **Not Responsive**: The website is not yet responsive and and will not adapt to different smaller screen sizes e.g tablets, phones, etc. That will be fixed in the future.
 
 
+### View the site here
+https://egbieandersonuku1.github.io/cuteCats/
