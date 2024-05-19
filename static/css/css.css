@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 1s linear;
+}
+
+:root {
+
+    --box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    --box-shadow2: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    /* fonts */
+    --font-lg: 2rem;
+
+    /* colors */
+    --blue: #030333;
+    --red: rgb(88, 4, 4);
+    --green: #030333;
+}
+
+/* Native elements */
+body {
+    background: ghostwhite;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+   
+}
+
+/* anchor tags */
+a {
+    text-decoration: none;
+}
+
+
+/* image tags */
+img {
+    cursor: pointer;
+    border: 4px solid lavender;
+}
+
+
+.img-fireworks {
+    border: none;
+}
+
+img:hover {
+    opacity: 0.8;
+    transform: scale(1.01);
+}
+
+
+/* Button */
+button {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+/* Custom Buttons */
+.medium-btn {
+    width: 15%;
+    padding: 5px;
+}
+
+/* The button div container */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+/* Fonts */
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.fantasy-font {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* custom font sizes */
+.font-lg {
+    font-size: 2rem;
+}
+
+/* Background colors */
+.bg-red {
+    background: var(--red);
+}
+
+.bg-blue {
+    background: var(--blue);
+}
+
+.bg-green {
+    background: rgb(5, 134, 5);
+}
+
+.white-text {
+    color: white;
+}
+
+
+/* The navigation bar */
+nav .nav-container {
+    background: rgb(83, 13, 83);
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+}
+
+nav .nav-container > a {
+    color: white;
+}
+
+
+/* Sections */
+
+/* cat section */
+#cats .container .cats {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    column-gap: 4px;
+
+    /* The width elements */
+    width: 80%;
+    margin: auto;
+}
+
+
+.main-cat__description__cat-attributes {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: auto;
+   row-gap: 2px;
+   width: 50%;
+ 
+}
+
+.main-cat__sidebar-div {
+    height: 70vh;
+    width: 50%;
+    object-fit: cover;
+   
+}
+
+.main-cat__sidebar-div img {
+    height: 100px;
+    width: 70%;
+    object-fit: cover;
+    
+}
+
+
+/* Buttons */
+
+.medium-btn {
+    width: 15%;
+    padding: 5px;
+}
+
+/* The button div container */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* utils */
+
+.opacity {
+    opacity: 0.8;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.padding-top-lg {
+    padding-top: 16px;
+}
+
+.main-cat__img-container{
+    height: 410px;
+    position: relative;
+    background: white;
+}
+
+.main-cat__img {
+    
+    box-shadow: var(--box-shadow);
+    border: 3px solid lavender;
+
+    /* size */
+    height: 100%;
+    width: 100%;
+    
+    object-fit: contain;
+  
+   
+}
+
+
+.message {
+    
+    border: 2px solid white;
+    padding: 10px;
+
+    background: rgb(5, 107, 5);
+    color: white;
+
+    /* The positions */
+    position: absolute;
+    top: -1600px;
+    right: 40px;
+
+    width: 400px; 
+}
+
+
+.message.show {
+    top: 200px;
+}
+
+
+.img-fireworks {
+
+    display: none;
+
+    /* position elements */
+    position: absolute; 
+    top: 50%;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* The spinner attributes */
+.spinner-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .spinner {
+
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #333;
+    border-radius: 50%;
+    display: none;
+
+    /* the sizes */
+    width: 40px;
+    height: 40px;
+   
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
