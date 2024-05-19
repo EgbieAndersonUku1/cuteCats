@@ -1,6 +1,6 @@
 # Cute Cats Website
 
-Welcome to the cats page! This page allows people to browse throw a list of clickable cats and click on the one they like. Please note that this webpage is still in progress and is not yet responsive.
+Welcome to the cats page! This page allows people to browse throw a list of clickable cats and click on the one they like. Note that this webpage is still in progress and is not yet responsive.
 
 ## Overview
 
