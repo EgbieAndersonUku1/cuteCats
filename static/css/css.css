@@ -101,7 +101,7 @@ button:hover {
 
 /* custom font sizes */
 .font-lg {
-    font-size: 2rem;
+    font-size: var(--font-lg);
 }
 
 /* Background colors */
